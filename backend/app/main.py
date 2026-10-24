@@ -17,7 +17,11 @@ logger = logging.getLogger(__name__)
 def create_app(settings: Settings | None = None, service: AnalysisService | None = None) -> FastAPI:
     configure_logging()
     settings = settings or get_settings()
-    app = FastAPI(title="Wind Forecast Accuracy API", version=__version__)
+    # Docs live under /api so the same paths work locally and behind the Vercel /api rewrite.
+    app = FastAPI(
+        title="Wind Forecast Accuracy API", version=__version__,
+        docs_url="/api/docs", openapi_url="/api/openapi.json", redoc_url=None,
+    )
     app.state.analysis = service or AnalysisService(settings)
 
     app.add_middleware(

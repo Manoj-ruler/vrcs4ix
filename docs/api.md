@@ -73,4 +73,5 @@ cover every version in the downloaded window, newest first. 404 if no interval s
 `{ "detail": "...", "code"?: "upstream_unavailable" | "data_unavailable" | "internal_error" }` with
 422 / 404 / 502 / 503 / 500 as described in [architecture.md](architecture.md#error-handling).
 
-FastAPI also serves interactive docs at `/docs` and the OpenAPI schema at `/openapi.json`.
+FastAPI also serves interactive docs at `/api/docs` and the OpenAPI schema at `/api/openapi.json`
+(live: <https://vrcs4ix.vercel.app/api/docs>).

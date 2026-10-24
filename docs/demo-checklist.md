@@ -4,7 +4,7 @@ Before recording
 - [ ] Open the deployed app once to warm the serverless function, so the first load is fast.
 - [ ] Browser at 100 % zoom, window ≥ 1440 px wide, bookmarks bar and notifications hidden.
 - [ ] Tabs ready: deployed app; GitHub repo README; `backend/app/services/forecast_selection.py`;
-      `backend/tests/test_forecast_selection.py`; a terminal in the repo; `<app>/docs` (FastAPI docs).
+      `backend/tests/test_forecast_selection.py`; a terminal in the repo; `https://vrcs4ix.vercel.app/api/docs` (FastAPI docs).
 - [ ] Check that the headline numbers on screen match `docs/demo-script.md`. If Elexon has revised data,
       use the on-screen numbers.
 

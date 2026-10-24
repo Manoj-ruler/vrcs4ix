@@ -48,6 +48,11 @@ def test_health_does_not_load_data(client):
     assert body == {"status": "ok", "version": "1.0.0", "dataLoaded": False}
 
 
+def test_docs_are_served_under_api(client):
+    assert client.get("/api/docs").status_code == 200
+    assert client.get("/api/openapi.json").json()["info"]["title"] == "Wind Forecast Accuracy API"
+
+
 def test_summary(client):
     body = client.get("/api/analysis/summary").json()
     m, q = body["metrics"], body["quality"]

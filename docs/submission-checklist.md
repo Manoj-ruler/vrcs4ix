@@ -9,18 +9,22 @@ Only items that were actually done and checked are ticked. Form:
 - [x] Commits authored as the configured repository identity; no AI co-author trailers
 - [x] No secrets committed (no keys are needed; staged diff scanned before each commit)
 - [x] README: files and directories, how to start, AI-tool disclosure
-- [ ] README: link to the deployed app (added once the deployment is verified)
+- [x] README: link to the deployed app
 
 ## Application
-- [x] Backend tests: `python -m pytest`, **55 passed** (2026-10-24)
+- [x] Backend tests: `python -m pytest`, **56 passed** (2026-10-24)
 - [x] Frontend: `npm run typecheck` clean, `npm test` **6 passed**, `npm run build` succeeds
 - [x] Frontend and backend run together locally (Vite proxy → FastAPI); real Elexon data; 744/744 hours matched
 - [x] Interval inspection, sorting, CSV export and error states (API stopped) checked in the browser
 - [ ] Docker: `docker compose up --build`. **Not verified.** Docker Desktop on the development
       machine fails to start ("initializing Inference manager … remove …\Docker\run\dockerInference"),
       a pre-existing local issue. The Dockerfiles and Compose file are written but have not been run.
-- [ ] Deployed on Vercel. **Blocked on a Vercel login** (`npx vercel login`, then `npx vercel --prod`).
-- [ ] Deployed app checked: page loads, `/api/health`, `/api/analysis/summary`, interval panel
+- [x] Deployed on Vercel: <https://vrcs4ix.vercel.app> (static build + FastAPI Python function, one project)
+- [x] Deployed app checked without authentication (2026-10-24): page 200; `/api/health`, `/summary`,
+      `/timeseries`, `/daily`, `/hourly`, `/records`, `/records.csv`, `/interval`, `/api/docs` all 200;
+      invalid dates give 422; live Elexon data (`dataSource.mode = live`); same figures as local
+      (MAE 2,107, RMSE 2,611, bias +1,840 MW, n = 744); in the browser the KPIs, 3 charts, table and
+      interval panel render with no console errors
 
 ## Video
 - [x] Script with timings and real figures: `docs/demo-script.md`; checklist: `docs/demo-checklist.md`

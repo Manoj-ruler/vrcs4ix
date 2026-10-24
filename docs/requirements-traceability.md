@@ -13,7 +13,7 @@ not make; each one is explained in [data-methodology.md](data-methodology.md).
 | 6 | WINDFOR: `startTime`, `publishTime`, `generation` | `normalize_forecasts` keeps every version | `test_forecast_versions_are_all_preserved_and_sorted` |
 | 7 | Data for purchase decisions in January 2026 | Delivery 1–31 Jan 2026 (UK days). Forecasts published from 27 Dec 2025. **Assumption**: "decisions in January" read as January delivery days; confirmed with the user | `test_january_first_uses_december_forecast`; live run: 744/744 matched |
 | 8 | React frontend | `frontend/` (React 18, TypeScript strict, Vite, Recharts 3) | `npm run typecheck`, `npm run build`, `npm test` |
-| 9 | Python backend | `backend/` (FastAPI, Pydantic, httpx) | `pytest` (55 tests) |
+| 9 | Python backend | `backend/` (FastAPI, Pydantic, httpx) | `pytest` (56 tests) |
 | 10 | Use Docker | `backend/Dockerfile`, `frontend/Dockerfile` + nginx, `docker-compose.yml` | see submission checklist (Docker run status) |
 | 11 | Deploy on Vercel or Heroku | `vercel.json`, `api/index.py` (single Vercel project) | see submission checklist (deployment status) |
 | 12 | AI tools mentioned in README | README §12 | README |

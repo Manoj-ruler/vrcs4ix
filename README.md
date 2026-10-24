@@ -4,7 +4,8 @@ A web app for a UK energy utility's day-ahead purchasing team. For every hour of
 the **national wind generation forecast that was actually available when the purchase decision was
 made**, compares it with **actual national wind generation**, and quantifies the error.
 
-**Live app:** _added after deployment is verified_ (see [Deployment](#deployment)).
+**Live app:** <https://vrcs4ix.vercel.app> · API health: <https://vrcs4ix.vercel.app/api/health> ·
+interactive API docs: <https://vrcs4ix.vercel.app/api/docs>.
 
 ---
 
@@ -164,7 +165,7 @@ frontend hosted apart from the API. No secrets are required.
 ## 8. Tests
 
 ```bash
-cd backend && python -m pytest          # 55 tests: selection/leakage, ingestion, metrics, API, client
+cd backend && python -m pytest          # 56 tests: selection/leakage, ingestion, metrics, API, client
 cd frontend && npm test                 # formatting, validation, URL building
 cd frontend && npm run typecheck && npm run build
 ```
