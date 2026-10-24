@@ -205,4 +205,14 @@ No environment variables are required. Optionally set `DATA_SOURCE=auto`, which 
 - The cache lives per server instance. A cold serverless start downloads again, or falls back to the
   snapshot.
 
+## 12. AI tools used
 
+As the brief allows, this project was built with AI assistance, disclosed here:
+
+- **Claude Code (Anthropic)** helped with requirements analysis, investigating the Elexon API, the
+  backend and frontend code, the automated tests, the Docker and Vercel configuration, and this
+  documentation.
+- **taste-skill**, an open-source Claude Code skill, guided the dashboard's visual style.
+
+The AI's output was reviewed and checked. Every figure in this README comes from running the
+application against real Elexon data, and every test result quoted was produced by running the tests.
