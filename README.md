@@ -170,7 +170,7 @@ cd frontend && npm test                 # formatting, validation, URL building
 cd frontend && npm run typecheck && npm run build
 ```
 
-Results from the latest run are recorded in [docs/submission-checklist.md](docs/submission-checklist.md).
+Latest run (2026-10-24): 56 backend tests passed, 6 frontend tests passed, type check clean, production build succeeded.
 
 ## 9. Deployment
 

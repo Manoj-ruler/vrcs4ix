@@ -14,15 +14,15 @@ not make; each one is explained in [data-methodology.md](data-methodology.md).
 | 7 | Data for purchase decisions in January 2026 | Delivery 1–31 Jan 2026 (UK days). Forecasts published from 27 Dec 2025. **Assumption**: "decisions in January" read as January delivery days; confirmed with the user | `test_january_first_uses_december_forecast`; live run: 744/744 matched |
 | 8 | React frontend | `frontend/` (React 18, TypeScript strict, Vite, Recharts 3) | `npm run typecheck`, `npm run build`, `npm test` |
 | 9 | Python backend | `backend/` (FastAPI, Pydantic, httpx) | `pytest` (56 tests) |
-| 10 | Use Docker | `backend/Dockerfile`, `frontend/Dockerfile` + nginx, `docker-compose.yml` | see submission checklist (Docker run status) |
-| 11 | Deploy on Vercel or Heroku | `vercel.json`, `api/index.py` (single Vercel project) | see submission checklist (deployment status) |
+| 10 | Use Docker | `backend/Dockerfile`, `frontend/Dockerfile` + nginx, `docker-compose.yml` | written, not yet run (Docker Desktop unavailable on the dev machine) |
+| 11 | Deploy on Vercel or Heroku | `vercel.json`, `api/index.py` (single Vercel project) | live at https://vrcs4ix.vercel.app; all endpoints checked without sign-in |
 | 12 | AI tools mentioned in README | README §12 | README |
 | 13 | ≤ 16 hours | Scope kept to the brief; no database or extra services | — |
 | 14 | Video: part 1 customer pitch ≤ 5 min | presenter script, part 1 (kept outside the repo) | recording is a manual step |
-| 15 | Video: part 2 technical review ≤ 5 min; total ≤ 10 min | presenter script, part 2 (kept outside the repo); `docs/demo-checklist.md` | recording is a manual step |
-| 16 | Public GitHub repo, anonymous name | random repository name, no personal identifiers in the name | `docs/submission-checklist.md` |
+| 15 | Video: part 2 technical review ≤ 5 min; total ≤ 10 min | presenter script, part 2 (kept outside the repo) | recording is a manual step |
+| 16 | Public GitHub repo, anonymous name | random repository name, no personal identifiers in the name | repository opens without signing in |
 | 17 | README: files and directories, how to start, app link | README §6, §7, top link | README |
-| 18 | Submit the form; check every URL in incognito | `docs/submission-checklist.md` | manual step |
+| 18 | Submit the form; check every URL in incognito | — | manual step |
 
 ## Engineering requirements from the master prompt
 
