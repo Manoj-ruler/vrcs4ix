@@ -1,0 +1,36 @@
+# Private assignment material
+*.docx
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.coverage
+htmlcov/
+
+# Node / frontend
+node_modules/
+frontend/dist/
+*.tsbuildinfo
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Local caches
+.cache/
+backend/.cache/
+.taste-skill/
+
+# Tooling
+.vercel/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local agent/editor tooling
+.claude/
