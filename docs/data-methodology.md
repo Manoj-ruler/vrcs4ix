@@ -13,7 +13,7 @@
 The **stream** endpoints return a bare JSON array with no paging. A month of FUELHH WIND is 1,488 rows,
 and the whole WINDFOR publication window is 19,856 rows, so neither needs a continuation token. We
 still request in bounded windows: 7 settlement days per FUELHH call and 1 publication day per WINDFOR
-call, 39 requests in all, run with limited concurrency.
+call, 40 requests in all (5 FUELHH + 35 WINDFOR), run with limited concurrency.
 
 **Why filter WINDFOR by publish time.** A start-time filter, or a "latest" endpoint, would hide or
 overwrite earlier versions. Filtering by `publishTime` returns every version published in the window.

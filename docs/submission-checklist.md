@@ -27,7 +27,7 @@ Only items that were actually done and checked are ticked. Form:
       interval panel render with no console errors
 
 ## Video
-- [x] Script with timings and real figures: `docs/demo-script.md`; checklist: `docs/demo-checklist.md`
+- [x] Timed script with real figures (kept outside the repo); recording checklist: `docs/demo-checklist.md`
 - [ ] Recorded (part 1 ≤ 5 min, part 2 ≤ 5 min, total ≤ 10 min)
 - [ ] Uploaded to YouTube as **Unlisted**; duration checked
 
